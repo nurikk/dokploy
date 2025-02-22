@@ -1559,4 +1559,19 @@ export const templates: TemplateData[] = [
 		tags: ["backend", "database", "api"],
 		load: () => import("./convex/index").then((m) => m.generate),
 	},
+
+	{
+	id: "hatchet",
+	name: "Hatched",
+	version: "latest",
+	description: "The Distributed Task Queue for More Resilient Web Applications",
+	logo: "hatchet.svg",
+	links: {
+		github: "https://github.com/hatchet-dev/hatchet",
+		website: "https://hatchet.run/",
+		docs: "https://docs.hatchet.run/home",
+	},
+	tags: ["automation"],
+	load: () => import("./hatchet/index").then((m) => m.generate),
+},
 ];
